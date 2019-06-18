@@ -1,0 +1,9 @@
+[Unit]
+Description=Run script once
+ 
+[Service]
+ExecStart=/usr/local/sbin/runonce.sh
+Type=oneshot
+ 
+[Install]
+WantedBy=multi-user.target
